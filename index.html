@@ -1,6 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<title>第一个页面</title>
-这是内容
-
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="https://typo.sofi.sh/typo.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js" ></script>
+	</head>
+	<body>
+		<div id="app">
+# 题目
+## 标题一
+* 内容一内容一内容一内容一内容一内容一内容一内容一内容一
+* 内容二内容二内容二内容二内容二内容二内容二内容二内容二
+## 链接
+[github](https://github.com/smiles0521)
+		</div>
+		<script type="text/javascript">
+			var html = document.getElementById("app").innerHTML;
+			var markdown = marked(html);
+			document.getElementById("app").innerHTML = markdown;
+		</script>
+	</body>
 </html>
