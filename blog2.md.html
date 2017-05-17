@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="https://typo.sofi.sh/typo.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js" ></script>
+	</head>
+	<body>
+		<div id="app">
+# 日记
+### 2017-05-17
+今天重新学习了一遍制作自动化的博客，所有制作过程基本能够完成。
+		</div>
+		<div><a href="https://smiles0521.github.io/blog20170516">返回目录</a></div>
+		<script type="text/javascript">
+			var html = document.getElementById("app").innerHTML;
+			var markdown = marked(html);
+			document.getElementById("app").innerHTML = markdown;
+		</script>
+	</body>
+</html>
