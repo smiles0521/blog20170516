@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="https://typo.sofi.sh/typo.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js" ></script>
+	</head>
+	<body>
+		<div id="app">
+# 再来测试一下
+
+啦啦啦啦啦啦啦啦啦啦啦
+		</div>
+		<script type="text/javascript">
+			var html = document.getElementById("app").innerHTML;
+			var markdown = marked(html);
+			document.getElementById("app").innerHTML = markdown;
+		</script>
+	</body>
+</html>
